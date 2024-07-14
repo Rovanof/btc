@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monedero BTC</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Monedero BTC</h1>
+    <div>
+      <label for="btcAddress">Dirección BTC</label>
+      <input type="text" id="btcAddress" readonly>
+    </div>
+    <div>
+      <p>Balance: <span id="balance">Cargando...</span></p>
+    </div>
+    <div>
+      <label for="destinationAddress">Dirección de destino</label>
+      <input type="text" id="destinationAddress">
+    </div>
+    <div>
+      <label for="amount">Monto a Enviar (en satoshis)</label>
+      <input type="number" id="amount">
+    </div>
+    <button id="sendBtn">Enviar BTC</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
